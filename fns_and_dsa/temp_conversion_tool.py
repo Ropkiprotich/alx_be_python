@@ -11,12 +11,12 @@ def convert_to_fahrenheit(celsius):
 def main():
     convetion_choice = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
     if convetion_choice == "F":
-        fahrenheit = float(input("Enter the temperature in Fahrenheit: "))
+        fahrenheit = float(input("Enter the temperature to convert: "))
         celsius = convert_to_celsius(fahrenheit)
         print(f"{fahrenheit}°F is {celsius:.2f}°C")
 
     elif convetion_choice == "C":
-        celsius = float(input("Enter the temperature in Celsius: "))
+        celsius = float(input("Enter the temperature to convert: "))
         fahrenheit = convert_to_fahrenheit(celsius)
         print(f"{celsius}°C is {fahrenheit:.2f}°F")
     else:

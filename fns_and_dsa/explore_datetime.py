@@ -15,7 +15,7 @@ def calculate_future_date():
         current_date = datetime.datetime.now().date()  # Get the current date (without time)
         future_date = current_date + timedelta(days=days_to_add)  # Add the timedelta to the current date
         print(f"Future date: {future_date}")  # Display the future date in "YYYY-MM-DD" format
-        return future_date
+        return future_date.strftime
     except ValueError:
         print("Invalid input. Please enter a valid number of days.")
 
