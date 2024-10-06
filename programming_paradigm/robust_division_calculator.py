@@ -5,7 +5,7 @@ def safe_divide(numerator, denominator):
         result = num /denom
         return f"Result:{result}"  
     except ZeroDivisionError:
-        return "erorr: canot divide by zero"
+        return "Error: Cannot divide by zero."
     
     except ValueError:
         return "Enter numeric numeric values only"
