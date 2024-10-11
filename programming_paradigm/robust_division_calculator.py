@@ -9,10 +9,4 @@ def safe_divide(numerator, denominator):
     
     except ValueError:
         return "Error: Please enter numeric values only."
-def main():
-    numerator = input("Enter the numerator")
-    denominator = input("Enter the denominator")
-    result = safe_divide(numerator, denominator)
-    print(f"The result of the division is:{result}")
-if __name__ == "__main__":
-    main()
+
