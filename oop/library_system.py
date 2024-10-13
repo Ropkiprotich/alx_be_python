@@ -23,16 +23,16 @@ class PrintBook(Book):
 
 class Library:
     def __init__(self):
-        self._books = []
+        self.books = []
 
     def add_book(self, book):
         if isinstance(book, Book):  
-            self._books.append(book)
+            self.books.append(book)
         else:
             print("Only objects of type Book can be added.")
 
     def list_books(self):
-        for book in self._books:
+        for book in self.books:
             if isinstance(book, EBook):
                     print(f"Title: {book.title}, Author: {book.author}, Page Size: {book.page_size} KB")
             elif isinstance(book, PrintBook):
