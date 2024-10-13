@@ -1,7 +1,7 @@
-
+import math
 class Shape:
     def area(self):
-        return "Area is not defined for the generic shape."
+        return "NotImplementedError."
 
 class Rectangle(Shape):
     def __init__(self, length, width):
